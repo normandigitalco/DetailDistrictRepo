@@ -421,11 +421,11 @@ nav.scrolled{
 /* SOCIAL */
 /* REVIEWS */
 .rev-carousel-outer{position:relative;margin-top:clamp(20px,3vw,32px)}
-.rev-grid{display:flex;gap:20px;overflow-x:auto;overflow-y:hidden;touch-action:pan-x;overscroll-behavior-y:none;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;padding:4px 4px 14px;margin:0;scrollbar-width:none;-ms-overflow-style:none}
+.rev-grid{display:flex;gap:20px;overflow-x:auto;overflow-y:hidden;touch-action:pan-x pan-y;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;padding:4px 4px 14px;margin:0;scrollbar-width:none;-ms-overflow-style:none}
 .rev-grid::-webkit-scrollbar{display:none}
 .rev-card{position:relative;background:var(--w);border:1px solid rgba(0,0,0,0.08);border-radius:var(--rad);padding:clamp(24px,3.5vw,32px);text-align:left;box-shadow:0 2px 12px rgba(0,0,0,0.05);transition:transform .2s,box-shadow .2s;flex:0 0 calc(33.333% - 14px);scroll-snap-align:start}
 .rev-google{position:absolute;top:clamp(18px,3vw,24px);right:clamp(18px,3vw,24px);width:22px;height:22px}
-.rev-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
+@media(hover:hover) and (pointer:fine){.rev-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.08)}}
 .rev-stars{color:#f5b400;font-size:14px;letter-spacing:2px;margin-bottom:14px}
 .rev-quote{font-size:13.5px;color:var(--tm);line-height:1.75}
 .rev-name{font-family:var(--R);font-weight:700;font-size:13.5px;color:var(--td);margin-bottom:2px;padding-right:30px}
@@ -795,7 +795,7 @@ footer{background:#0a0907;border-top:1px solid var(--line);padding:clamp(48px,7v
  </div>
  </div>
  <div style="text-align:center;margin-top:clamp(28px,4vw,40px)">
- <a href="https://www.google.com/maps/search/?api=1&query=Detail+District+Mobile+Auto+Spa" target="_blank" rel="noopener" class="btn-dark">Read All Our Reviews</a>
+ <a href="https://www.google.com/maps/place/Detail+District+Mobile+Auto+Spa/@34.227074,-86.9986786,6z/data=!4m12!1m2!2m1!1sDetail+District+Mobile+Auto+Spa!3m8!1s0x4395b9eb0723f621:0xf3cc27eeb11922c4!8m2!3d35.8406256!4d-78.7391625!9m1!1b1!15sCh9EZXRhaWwgRGlzdHJpY3QgTW9iaWxlIEF1dG8gU3BhWiEiH2RldGFpbCBkaXN0cmljdCBtb2JpbGUgYXV0byBzcGGSARVjYXJfZGV0YWlsaW5nX3NlcnZpY2WaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnBDUzFZemFGVlBTR3hMV0RKYWFGUnFRa1pOUnpWd1VWWldOV015WXhBQuABAPoBBAgAED0!16s%2Fg%2F11yzcx0jd1?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="btn-dark">Read All Our Reviews</a>
  </div>
  </div>
  </div>
@@ -934,7 +934,7 @@ footer{background:#0a0907;border-top:1px solid var(--line);padding:clamp(48px,7v
  <svg width="22" height="22" fill="var(--td)"><use href="#ico-ig"/></svg>
  <div><span class="soc-card-name">Instagram</span><span class="soc-card-handle">@detaildistrictmobileautospa</span></div>
  </a>
- <a href="https://www.google.com/maps/search/?api=1&query=Detail+District+Mobile+Auto+Spa" target="_blank" rel="noopener" class="soc-card">
+ <a href="https://www.google.com/maps/place/Detail+District+Mobile+Auto+Spa/@34.227074,-86.9986786,6z/data=!4m12!1m2!2m1!1sDetail+District+Mobile+Auto+Spa!3m8!1s0x4395b9eb0723f621:0xf3cc27eeb11922c4!8m2!3d35.8406256!4d-78.7391625!9m1!1b1!15sCh9EZXRhaWwgRGlzdHJpY3QgTW9iaWxlIEF1dG8gU3BhWiEiH2RldGFpbCBkaXN0cmljdCBtb2JpbGUgYXV0byBzcGGSARVjYXJfZGV0YWlsaW5nX3NlcnZpY2WaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnBDUzFZemFGVlBTR3hMV0RKYWFGUnFRa1pOUnpWd1VWWldOV015WXhBQuABAPoBBAgAED0!16s%2Fg%2F11yzcx0jd1?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="soc-card">
  <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--td)"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
  <div><span class="soc-card-name">Google Reviews</span><span class="soc-card-handle">5.0&#9733; &middot; 30+ Reviews</span></div>
  </a>
@@ -1310,7 +1310,7 @@ footer{background:#0a0907;border-top:1px solid var(--line);padding:clamp(48px,7v
  <div class="c-row"><span class="c-label">Insta:</span><span class="c-val" style="color:var(--td)"><a href="https://www.instagram.com/detaildistrictmobileautospa/" target="_blank" rel="noopener" style="color:var(--td)">@detaildistrictmobileautospa</a></span></div>
  <div class="c-row"><span class="c-label">Area:</span><span class="c-val" style="color:var(--td)">Raleigh, Cary, Apex &amp; Wake County - Mobile</span></div>
  <div class="c-row"><span class="c-label">Hours:</span><span class="c-val" style="color:var(--td);font-weight:500;font-size:14px">Mon&ndash;Sat 6&nbsp;AM&ndash;8:30&nbsp;PM &middot; Sun 7&nbsp;AM&ndash;8:30&nbsp;PM</span></div>
- <div class="c-row"><span class="c-label">Rated:</span><span class="c-val" style="color:var(--td)"><a href="https://www.google.com/maps/search/?api=1&query=Detail+District+Mobile+Auto+Spa" target="_blank" rel="noopener" style="color:var(--td)">5.0&#9733; &middot; 30+ Google Reviews</a></span></div>
+ <div class="c-row"><span class="c-label">Rated:</span><span class="c-val" style="color:var(--td)"><a href="https://www.google.com/maps/place/Detail+District+Mobile+Auto+Spa/@34.227074,-86.9986786,6z/data=!4m12!1m2!2m1!1sDetail+District+Mobile+Auto+Spa!3m8!1s0x4395b9eb0723f621:0xf3cc27eeb11922c4!8m2!3d35.8406256!4d-78.7391625!9m1!1b1!15sCh9EZXRhaWwgRGlzdHJpY3QgTW9iaWxlIEF1dG8gU3BhWiEiH2RldGFpbCBkaXN0cmljdCBtb2JpbGUgYXV0byBzcGGSARVjYXJfZGV0YWlsaW5nX3NlcnZpY2WaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnBDUzFZemFGVlBTR3hMV0RKYWFGUnFRa1pOUnpWd1VWWldOV015WXhBQuABAPoBBAgAED0!16s%2Fg%2F11yzcx0jd1?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="color:var(--td)">5.0&#9733; &middot; 30+ Google Reviews</a></span></div>
  </div>
  <div class="soc-row">
  <a href="https://www.instagram.com/detaildistrictmobileautospa/" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;border:1px solid var(--lined);transition:border-color .2s" onmouseover="this.style.borderColor='var(--y)'" onmouseout="this.style.borderColor='var(--lined)'"><svg width="17" height="17" fill="var(--ts)"><use href="#ico-ig"/></svg></a>
@@ -1528,7 +1528,10 @@ function registerBgVideo(v){
  vids.forEach(function(v){registerBgVideo(v);playVisible(v);}); // immediate attempt on the hero - it's above the fold
  let _ul=false;
  function _unlock(){if(_ul)return;_ul=true;_bgVideos.forEach(playVisible);}
+ document.addEventListener('touchstart',_unlock,{passive:true,once:true});
  document.addEventListener('touchend',_unlock,{passive:true,once:true});
+ document.addEventListener('scroll',_unlock,{passive:true,once:true});
+ document.addEventListener('click',_unlock,{passive:true,once:true});
  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')_bgVideos.forEach(function(v){if(v.offsetParent!==null)playVisible(v);});});
  window.addEventListener('pageshow',function(e){if(e.persisted)_bgVideos.forEach(function(v){if(v.offsetParent!==null)playVisible(v);});});
 })();
