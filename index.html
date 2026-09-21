@@ -12,9 +12,9 @@
 <meta property="og:url" content="https://detaildistrictmobileautospa.com/"/>
 <meta property="og:title" content="Detail District Mobile Auto Spa | Mobile Detailing - Wake County, NC"/>
 <meta property="og:description" content="5.0-star rated mobile detailing across Raleigh, Cary, Apex, and the rest of Wake County, NC. We come to you."/>
-<meta property="og:image" content="/img/hero-triptych.webp"/>
+<meta property="og:image" content="/img/mercedes-g63-front.webp"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="/img/hero-triptych.webp"/>
+<meta name="twitter:image" content="/img/mercedes-g63-front.webp"/>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"AutomotiveBusiness","name":"Detail District Mobile Auto Spa","description":"Mobile auto detailing serving Raleigh, Cary, Apex, and the rest of Wake County, NC. Exterior and interior detailing, paint correction, ceramic coatings, and fleet detailing.","url":"https://detaildistrictmobileautospa.com","telephone":"+19199228122","sameAs":["https://www.instagram.com/detaildistrictmobileautospa/"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"32"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"06:00","closes":"20:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"07:00","closes":"20:30"}],"areaServed":[{"@type":"City","name":"Raleigh"},{"@type":"City","name":"Cary"},{"@type":"City","name":"Apex"}]}
 </script>
@@ -287,6 +287,19 @@ nav.scrolled{
 .about-split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,64px);align-items:center}
 .about-split-img{min-height:460px}
 .about-split-text{display:flex;flex-direction:column;justify-content:center;padding:clamp(8px,2vw,24px) 0}
+.about-row{display:flex;align-items:stretch;min-height:clamp(460px,62vh,720px)}
+.about-row.reverse{flex-direction:row-reverse}
+.about-row-img{flex:0 1 50%;position:relative;overflow:hidden;min-height:340px}
+.about-row-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.about-row-text{flex:0 1 50%;display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,88px)}
+.about-row-h{font-family:var(--R);font-weight:900;font-size:clamp(1.7rem,3vw,2.6rem);text-transform:uppercase;letter-spacing:-.8px;line-height:1.02;color:var(--td);margin:0 0 22px;max-width:480px}
+.about-row-p{font-size:15.5px;color:var(--tm);line-height:1.95;max-width:440px;margin:0}
+.about-row-steps{display:flex;flex-direction:column}
+.about-row-step{padding:clamp(18px,2.5vw,26px) 0;border-top:1px solid var(--line2)}
+.about-row-steps .about-row-step:first-child{border-top:none;padding-top:0}
+.about-row-step h4{font-family:var(--R);font-weight:800;font-size:1.05rem;text-transform:uppercase;letter-spacing:.2px;color:var(--td);margin:0 0 8px}
+.about-row-step p{font-size:14px;color:var(--tm);line-height:1.85;margin:0;max-width:440px}
+@media(max-width:880px){.about-row,.about-row.reverse{flex-direction:column;min-height:auto}.about-row-img{min-height:280px;height:56vw}.about-row-text{padding:clamp(36px,8vw,48px) var(--pad)}.about-row-h{max-width:none}.about-row-p{max-width:none}}
 
 /* ABOUT BAND */
 .about-band{display:grid;grid-template-columns:1fr 1fr;min-height:580px;overflow:hidden}
@@ -408,7 +421,7 @@ nav.scrolled{
 /* SOCIAL */
 /* REVIEWS */
 .rev-carousel-outer{position:relative;margin-top:clamp(20px,3vw,32px)}
-.rev-grid{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;padding:4px 4px 14px;margin:0;scrollbar-width:none;-ms-overflow-style:none}
+.rev-grid{display:flex;gap:20px;overflow-x:auto;overflow-y:hidden;touch-action:pan-x;overscroll-behavior-y:none;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;padding:4px 4px 14px;margin:0;scrollbar-width:none;-ms-overflow-style:none}
 .rev-grid::-webkit-scrollbar{display:none}
 .rev-card{position:relative;background:var(--w);border:1px solid rgba(0,0,0,0.08);border-radius:var(--rad);padding:clamp(24px,3.5vw,32px);text-align:left;box-shadow:0 2px 12px rgba(0,0,0,0.05);transition:transform .2s,box-shadow .2s;flex:0 0 calc(33.333% - 14px);scroll-snap-align:start}
 .rev-google{position:absolute;top:clamp(18px,3vw,24px);right:clamp(18px,3vw,24px);width:22px;height:22px}
@@ -1147,10 +1160,6 @@ footer{background:#0a0907;border-top:1px solid var(--line);padding:clamp(48px,7v
  <p>Text or call, or fill out the form. We'll get back to you fast.</p>
  <button onclick="showPage('contact')" class="btn-y" style="flex-shrink:0">Book a Detail</button>
  </div>
- <div class="sec" style="padding:clamp(36px,5vw,52px) var(--pad);text-align:center">
- <div class="svc-map-wrap"><img src="img/service-area-map.webp" alt="Detail District service area - Raleigh, Cary, Apex, Garner, Holly Springs, Fuquay-Varina, and the rest of Wake County, NC" loading="lazy" style="display:block;width:100%;height:clamp(220px,32vw,340px);object-fit:cover"></div>
- <p style="font-family:var(--C);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--text2)">Raleigh &middot; Cary &middot; Apex &middot; Wake County, NC</p>
- </div>
  <footer>
  <div class="footer-top">
  <div class="f-brand">
@@ -1170,7 +1179,7 @@ footer{background:#0a0907;border-top:1px solid var(--line);padding:clamp(48px,7v
 <div class="page" id="about">
  <div style="height:var(--nav-h)"></div>
  <!-- DARK: About section - photo bubble + free text -->
- <div style="background:var(--bg);padding:clamp(48px,7vw,88px) var(--pad)">
+ <div style="background:var(--bg);padding:clamp(48px,7vw,88px) var(--pad) clamp(72px,10vw,140px)">
  <div style="max-width:1200px;margin:0 auto">
  <div class="about-split">
  <div style="position:relative;min-height:460px" class="about-split-img">
@@ -1202,58 +1211,35 @@ footer{background:#0a0907;border-top:1px solid var(--line);padding:clamp(48px,7v
  </div>
  </div>
  </div>
- </div>
- <!-- WHITE: Our Story - editorial prose, no cards or icons -->
- <div class="sec" style="background:var(--w);padding-top:clamp(48px,7vw,80px);padding-bottom:clamp(48px,7vw,80px)">
- <div class="sec-inner" style="max-width:780px;text-align:center">
- <div class="eyebrow dark" style="justify-content:center"><span>Our Story</span></div>
- <h2 class="sec-h dark" style="margin-bottom:26px">Built On Showing Up.</h2>
- <p style="font-size:15px;color:var(--tm);line-height:1.95;margin-bottom:18px">Detail District started with one plan - show up, do the work right, and let the results speak. No shop to drive to, no drop-off, no waiting on a call that your car is ready. We come to you, wherever it is parked, and bring everything we need to do the job right the first time.</p>
- <p style="font-size:15px;color:var(--tm);line-height:1.95">That standard does not change based on what is in the driveway. Seven days a week across Raleigh, Cary, Apex, and the rest of Wake County, we have built our name one car at a time - on everything from Ferraris and Porsches to the car you drive to work every day.</p>
+ <div style="max-width:700px;margin:clamp(56px,8vw,96px) auto 0;text-align:left">
+ <h2 style="font-family:var(--R);font-weight:900;font-size:clamp(1.4rem,2.6vw,2rem);text-transform:uppercase;letter-spacing:-.6px;line-height:1.05;color:var(--text);margin:0 0 20px">Built On Showing Up.</h2>
+ <p style="font-size:15px;color:var(--text2);line-height:1.95;margin-bottom:18px">Detail District started with one plan - show up, do the work right, and let the results speak. No shop to drive to, no drop-off, no waiting on a call that your car is ready. We come to you, wherever it is parked, and bring everything we need to do the job right the first time.</p>
+ <p style="font-size:15px;color:var(--text2);line-height:1.95">That standard does not change based on what is in the driveway. Seven days a week across Raleigh, Cary, Apex, and the rest of Wake County, we have built our name one car at a time - on everything from Ferraris and Porsches to the car you drive to work every day.</p>
  </div>
  </div>
- <!-- DARK: Why section -->
- <div class="sec" style="background:var(--w)">
- <div class="sec-inner" style="max-width:900px">
- <div class="eyebrow dark" style="justify-content:center"><span>Why Detail District</span></div>
- <h2 class="sec-h dark" style="text-align:center;margin-bottom:clamp(44px,6vw,68px)">What You're Getting.</h2>
- <div class="why-list">
- <div class="why-row reveal">
- <h3 class="why-row-h">We Come to You</h3>
- <p class="why-row-p">Your driveway, your office lot, wherever the car is parked. We show up fully loaded - water, power, every tool and product we need - and handle everything on site. You don't go anywhere, and you don't lose a day waiting on a shop.</p>
- </div>
- <div class="why-row reveal reveal-delay-1">
- <h3 class="why-row-h">One Standard.<br>Every Car.</h3>
- <p class="why-row-p">Ferraris, daily drivers, fleet trucks - the level of care doesn't change based on what's parked in the driveway. Every job gets the same process, the same products, and the same attention to the details most people never notice until they're gone.</p>
- </div>
- <div class="why-row reveal reveal-delay-2">
- <h3 class="why-row-h">See the Work<br>First</h3>
- <p class="why-row-p">Real reviews, real before-and-afters on Instagram and Google - not stock photos or staged shots. See exactly what we do and what you'll get before you ever reach out.</p>
+ <!-- Real editorial layout: alternating full-bleed photo + text rows, long and tall -->
+ <div class="about-row" style="background:var(--w)">
+ <div class="about-row-img"><img src="img/audi-rsq8-exterior-day.webp" alt="Audi RS Q8 detailed in a Wake County driveway" loading="lazy"></div>
+ <div class="about-row-text">
+ <h2 class="about-row-h">One Standard.<br>Every Car.</h2>
+ <p class="about-row-p">Ferraris, daily drivers, fleet trucks - the process doesn't change based on what's parked in the driveway. Every job gets the same wash, the same products, and the same attention to the details most people never notice until they're gone. That's the standard, every time, no exceptions.</p>
  </div>
  </div>
+ <div class="about-row reverse" style="background:var(--w2)">
+ <div class="about-row-img"><img src="img/bmw-x5m-front.webp" alt="BMW X5 M detailed in a Wake County driveway" loading="lazy"></div>
+ <div class="about-row-text">
+ <h2 class="about-row-h">We Come<br>to You.</h2>
+ <p class="about-row-p">Your driveway, your office lot, wherever the car is parked. We show up fully loaded - water, power, every tool and product we need - and handle everything on site. You don't drive anywhere, and you don't lose a day of your schedule waiting on a shop.</p>
  </div>
  </div>
- <!-- DARK: Process - full-bleed photo band, replaces the old 3-tile pillar strip -->
- <div class="process-band">
- <div class="process-bg"><img src="img/ferrari-gtc4lusso-front.webp" alt="Ferrari detailed in a Wake County driveway" loading="lazy"></div>
- <div class="process-ov"></div>
- <div class="process-inner">
- <div class="eyebrow" style="justify-content:center"><span>How It Works</span></div>
- <h2 class="sec-h" style="text-align:center;margin-bottom:12px">From Booking To Done.</h2>
- <p class="sec-sub" style="text-align:center;max-width:520px;margin:0 auto">No shop to drop off at, no loaner car, no waiting around. Here's what happens once you reach out.</p>
- <div class="process-steps">
- <div class="process-step">
- <h3>You Reach Out</h3>
- <p>Tell us what the car needs and where to find it. Text, call, or fill out the form - we'll get you on the schedule, usually within a couple of days.</p>
- </div>
- <div class="process-step">
- <h3>We Come To You</h3>
- <p>We show up fully loaded - water, power, every tool and product we need. Your driveway or office lot works. You don't have to be there.</p>
- </div>
- <div class="process-step">
- <h3>You Get It Back</h3>
- <p>We finish, walk you through what we did, and you're back in a car that looks the way it did the day you bought it.</p>
- </div>
+ <div class="about-row" style="background:var(--w)">
+ <div class="about-row-img"><img src="img/ferrari-gtc4lusso-front.webp" alt="Ferrari GTC4Lusso detailed in a Wake County driveway" loading="lazy"></div>
+ <div class="about-row-text">
+ <h2 class="about-row-h">From Booking<br>to Done.</h2>
+ <div class="about-row-steps">
+ <div class="about-row-step"><h4>You Reach Out</h4><p>Tell us what the car needs and where to find it. Text, call, or fill out the form - we'll get you on the schedule, usually within a couple of days.</p></div>
+ <div class="about-row-step"><h4>We Show Up Ready</h4><p>Fully loaded with water, power, and every tool and product we need. Your driveway or office lot works fine - you don't have to be there.</p></div>
+ <div class="about-row-step"><h4>You Get It Back</h4><p>We finish, walk you through what we did, and you're back in a car that looks the way it did the day you bought it.</p></div>
  </div>
  </div>
  </div>
@@ -1364,10 +1350,6 @@ footer{background:#0a0907;border-top:1px solid var(--line);padding:clamp(48px,7v
  </div>
  </div>
  </div>
- <div class="sec" style="padding:clamp(36px,5vw,52px) var(--pad);text-align:center">
- <div class="svc-map-wrap"><img src="img/service-area-map.webp" alt="Detail District service area - Raleigh, Cary, Apex, Garner, Holly Springs, Fuquay-Varina, and the rest of Wake County, NC" loading="lazy" style="display:block;width:100%;height:clamp(220px,32vw,340px);object-fit:cover"></div>
- <p style="font-family:var(--C);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--text2)">Raleigh &middot; Cary &middot; Apex &middot; Wake County, NC</p>
- </div>
  <footer>
  <div class="footer-top">
  <div class="f-brand">
@@ -1417,7 +1399,6 @@ function scrollRevs(dir){
 // Controlled 3-col grid - order is L→R, row by row
 // Layout: wide=spans 2 cols, tall=taller aspect, sq=square, default=4/3
 const GALLERY=[
- {src:'img/hero-triptych.webp',alt:'Ferrari, Maserati MC20, and foam wash - recent Wake County details',wide:true},
  {src:'img/audi-rsq8-exterior-day.webp',alt:'Audi RS Q8 exterior detail'},
  {src:'img/porsche-gt3-wheel-yellow-caliper.webp',alt:'Porsche 911 GT3 wheel and yellow brake caliper',tall:true},
  {src:'img/mercedes-g63-front.webp',alt:'Mercedes-AMG G63 exterior detail',sq:true},
@@ -1466,7 +1447,7 @@ function buildGrid(items,el,cb){
  d.className='gal-item'+(g.wide?' wide':'')+(g.tall?' tall':'')+(g.sq?' sq':'');
  d.onclick=function(){cb(i);};
  const img=document.createElement('img');
- img.src=g.src;img.alt=g.alt;img.loading=i<2?'eager':'lazy';img.decoding='async';
+ img.src=g.src;img.alt=g.alt;img.loading=i<6?'eager':'lazy';img.decoding='async';
  const ov=document.createElement('div');ov.className='gal-ov';ov.innerHTML='<span>View</span>';
  d.appendChild(img);d.appendChild(ov);el.appendChild(d);
  });
