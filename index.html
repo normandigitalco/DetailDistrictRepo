@@ -649,11 +649,11 @@ footer{background:#0a0907;border-top:1px solid var(--line);padding:clamp(48px,7v
 <div class="page" id="home">
  <section class="hero">
  <div class="hero-bg">
- <video id="heroVid" muted autoplay loop playsinline preload="auto" poster="img/hero-video-v2-poster.webp">
- <source src="img/hero-video-v2.mp4" type="video/mp4">
+ <video id="heroVid" muted autoplay loop playsinline preload="auto" poster="img/hero-video-v6-poster.webp">
+ <source src="img/hero-video-v6.mp4" type="video/mp4">
  </video>
- <video id="heroVidMobile" muted autoplay loop playsinline preload="auto" poster="img/hero-video-mobile-v2-poster.webp">
- <source src="img/hero-video-mobile-v2.mp4" type="video/mp4">
+ <video id="heroVidMobile" muted autoplay loop playsinline preload="auto" poster="img/hero-video-mobile-v6-poster.webp">
+ <source src="img/hero-video-mobile-v6.mp4" type="video/mp4">
  </video>
  </div>
  <div class="hero-ov"></div>
@@ -1532,6 +1532,8 @@ function registerBgVideo(v){
  document.addEventListener('touchend',_unlock,{passive:true,once:true});
  document.addEventListener('scroll',_unlock,{passive:true,once:true});
  document.addEventListener('click',_unlock,{passive:true,once:true});
+ document.addEventListener('mousemove',_unlock,{passive:true,once:true});
+ document.addEventListener('keydown',_unlock,{passive:true,once:true});
  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')_bgVideos.forEach(function(v){if(v.offsetParent!==null)playVisible(v);});});
  window.addEventListener('pageshow',function(e){if(e.persisted)_bgVideos.forEach(function(v){if(v.offsetParent!==null)playVisible(v);});});
 })();
